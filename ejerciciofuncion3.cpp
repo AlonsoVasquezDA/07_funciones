@@ -18,7 +18,7 @@ int main(){
     	         break;
     	case 2: cout<<"Okey";
     	         break;
-    	default: cout<<"Coloque otra opcion."<<endl;
+    	default: cout<<"Seleccione otra opcion."<<endl;
     	         break; 
 	}
     return 0;
