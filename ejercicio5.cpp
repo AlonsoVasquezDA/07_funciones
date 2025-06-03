@@ -8,6 +8,10 @@ using namespace std;
     	cin>>n1;
     	cout<<"Ingrese el segundo numero: "<<endl;
     	cin>>n2;
+    	   if (n1<0 || n2 <0 ) {
+    	   	  cout<<"Ingrese un numero mayor que cero. "<<endl;
+    	   	   return 1;
+		   }
     	   if(divisores(n1)&&divisoress(n2)){
     	   	cout<<"Los numeros son causas.";
 		   } else {
@@ -15,7 +19,7 @@ using namespace std;
 		    
 		   }
     	  return 0; 
-	}
+	} 
 	int divisores(int m){
 		int s=0;
 		for(int i=1;i<m;i++){
