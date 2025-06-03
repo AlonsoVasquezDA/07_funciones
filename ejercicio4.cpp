@@ -6,6 +6,10 @@ int main(){
 	cout<<"Ingrese un numero: "<<endl;
 	cin>>numero;
 	perfecto=numeroperfecto(numero);
+	if (numero<0){
+		cout<<"Ingrese un numero mayor que cero. "<<endl;
+		return 1;
+	}
 	if (perfecto==numero){
 		cout<<"El numero es perfecto. "<<endl;
 	} else {
@@ -18,6 +22,7 @@ int numeroperfecto(int a){
 	int suma=0;
 	for(int i=1;i<a;i++){
 		if(a % i==0){
+			cout<<i<< " " ;
 			suma += i;
 			
 		}
