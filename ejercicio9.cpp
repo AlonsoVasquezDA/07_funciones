@@ -6,6 +6,10 @@ int main (){
 	float suma=0;
 	cout<<"Coloque el numero de la serie: ";
 	cin>>num;
+	if (num<0){
+		cout<<"Ingrese un numero mayor que cero. "<<endl;
+	return 1;
+	}
 	for(int i=1; i<=num; i++){
 		suma=suma+((double)(factorial(i))/(i*2));
     }
