@@ -8,6 +8,10 @@ int main(){
 	cin>>num1;
 	cout<<"Ingrese el segundo numero: ";
 	cin>>num2;
+	if (num1 <= 0 || num2 <= 0) {
+		cout << "Error: ambos números deben ser mayores que cero." << endl;
+		return 1;
+	}
 	cout<<"El maximo comun divisor de "<<num1<<" y "<<num2<<" es "<<mcd(num1,num2)<<endl;
 	cout<<"El minimo comun multiplo de "<<num1<<" y "<<num2<<" es "<<mcm(num1,num2)<<endl;
 	return 0;
@@ -23,7 +27,7 @@ int mcd(int a,int b){
 		menor=a;
 	}
 	for(int i=1; i<=menor; i++){
-		if(mayor%i==0&&menor%i==0){
+		if(mayor%i==0 && menor%i==0){
 			c=1*i;
 		}
 	}
