@@ -11,7 +11,10 @@ int main() {
 		} else {
 			cout << "El numero " << num << " no es primo." << endl;
 		}
-	} 
+	}else if (num==0){
+             cout<<"Ingrese un numero diferente a cero. " << endl;
+             return 2;
+        } 
 	return 0;
 }
 
